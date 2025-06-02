@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-StudentApplication<student>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ajaybhatia.student.StudentApplication",
+      "projectName": "student",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55566 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=student"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-SkoolApplication<skool>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ajaybhatia.skool.SkoolApplication",
+      "projectName": "skool",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServiceRegistryApplication<service-registry>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ajaybhatia.service_registry.ServiceRegistryApplication",
+      "projectName": "service-registry",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-CloudGatewayApplication<cloud-gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ajaybhatia.cloud_gateway.CloudGatewayApplication",
+      "projectName": "cloud-gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
