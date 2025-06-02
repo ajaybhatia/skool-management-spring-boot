@@ -17,6 +17,15 @@ spring:
               uri: lb://SCHOOL-SERVICE
               predicates:
                 - Path=/api/school/**
+  datasource:
+    url: ${SCHOOL_DATASOURCE_URL}
+    username: ${SCHOOL_DATASOURCE_USERNAME}
+    password: ${SCHOOL_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 eureka:
   client:
@@ -26,3 +35,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+
+jwt:
+  secret: ${JWT_SECRET}
